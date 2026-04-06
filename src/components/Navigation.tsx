@@ -8,22 +8,22 @@ interface NavigationProps {
 
 const translations = {
   en: {
-    biography: "Biography",
-    concerts: "Concerts",
+    biography: "About Me",
+    concerts: "Classes",
     gallery: "Gallery",
-    contact: "Contact",
+    contact: "Sign Up",
   },
   de: {
-    biography: "Biographie",
-    concerts: "Konzerte",
+    biography: "Über mich",
+    concerts: "Kurse",
     gallery: "Galerie",
-    contact: "Kontakt",
+    contact: "Anmelden",
   },
   ru: {
-    biography: "Биография",
-    concerts: "Концерты",
+    biography: "Обо мне",
+    concerts: "Занятия",
     gallery: "Галерея",
-    contact: "Контакт",
+    contact: "Записаться",
   },
 }
 
@@ -66,7 +66,7 @@ export default function Navigation({ language, onLanguageChange }: NavigationPro
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className={`${logoColor} font-serif text-2xl font-normal tracking-wide transition-colors duration-300`}>
-            A. Voss
+            Н. Алексеева
           </div>
 
           {/* Desktop Menu */}

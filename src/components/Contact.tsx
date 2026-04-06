@@ -7,43 +7,43 @@ interface ContactProps {
 
 const translations = {
   en: {
-    heading: "Contact",
-    subheading: "Get in Touch",
+    heading: "Sign Up for Classes",
+    subheading: "Leave your contact details and I'll get back to you to discuss the schedule",
     email: "Email",
     phone: "Phone",
-    message: "Message",
-    send: "Send Message",
-    location: "Location",
-    name: "Name",
-    successMessage: "Message sent successfully!",
-    locationValue: "Berlin, Germany",
-    phoneValue: "+49 (30) 123-4567",
+    message: "Your message (child's age, interests, questions)",
+    send: "Send Request",
+    location: "Studio",
+    name: "Your Name",
+    successMessage: "Your request has been sent! I'll be in touch soon.",
+    locationValue: "Young Voices Vocal & Theatre Studio",
+    phoneValue: "Contact via Instagram or Telegram",
   },
   de: {
-    heading: "Kontakt",
-    subheading: "Treten Sie mit uns in Kontakt",
+    heading: "Zur Anmeldung",
+    subheading: "Hinterlassen Sie Ihre Kontaktdaten und ich melde mich, um den Zeitplan zu besprechen",
     email: "E-Mail",
     phone: "Telefon",
-    message: "Nachricht",
-    send: "Nachricht senden",
-    location: "Standort",
-    name: "Name",
-    successMessage: "Nachricht erfolgreich gesendet!",
-    locationValue: "Berlin, Deutschland",
-    phoneValue: "+49 (30) 123-4567",
+    message: "Ihre Nachricht (Alter des Kindes, Interessen, Fragen)",
+    send: "Anfrage senden",
+    location: "Studio",
+    name: "Ihr Name",
+    successMessage: "Ihre Anfrage wurde gesendet! Ich melde mich bald.",
+    locationValue: "Vokal- & Theaterstudio Junge Stimmen",
+    phoneValue: "Kontakt über Instagram oder Telegram",
   },
   ru: {
-    heading: "Контакты",
-    subheading: "Свяжитесь с нами",
+    heading: "Запись на занятия",
+    subheading: "Оставьте контакты — я свяжусь с вами, чтобы обсудить расписание",
     email: "Эл. почта",
     phone: "Телефон",
-    message: "Сообщение",
-    send: "Отправить",
-    location: "Город",
-    name: "Имя",
-    successMessage: "Сообщение успешно отправлено!",
-    locationValue: "Берлин, Германия",
-    phoneValue: "+49 (30) 123-4567",
+    message: "Ваше сообщение (возраст ребёнка, интересы, вопросы)",
+    send: "Отправить заявку",
+    location: "Студия",
+    name: "Ваше имя",
+    successMessage: "Заявка отправлена! Скоро свяжусь с вами.",
+    locationValue: "Вокальная и театральная студия «Юные голоса»",
+    phoneValue: "Связь через Instagram или Telegram",
   },
 }
 
@@ -55,7 +55,7 @@ export default function Contact({ language }: ContactProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    const mailtoLink = `mailto:hello@example.com?subject=${encodeURIComponent(`New message from ${formData.name}`)}&body=${encodeURIComponent(`From: ${formData.email}\n\n${formData.message}`)}`
+    const mailtoLink = `mailto:alekseeva.natalia@example.com?subject=${encodeURIComponent(`Запись в студию от ${formData.name}`)}&body=${encodeURIComponent(`От: ${formData.email}\n\n${formData.message}`)}`
     window.location.href = mailtoLink
 
     setSubmitted(true)
